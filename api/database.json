@@ -1,5 +1,5 @@
 {
-  "paint": [
+  "paints": [
     {
       "id": 1,
       "color": "Silver",
@@ -21,7 +21,7 @@
       "price": 200
     }
   ],
-  "interior": [
+  "interiors": [
     {
       "id": 1,
       "material": "Beige Fabric",
@@ -43,7 +43,7 @@
       "price": 310
     }
   ],
-  "technology": [
+  "technologies": [
     {
       "id": 1,
       "package": "Basic Package (basic sound system)",
@@ -92,14 +92,14 @@
       "paintId": 1,
       "interiorId": 1,
       "technologyId": 1,
-      "wheelsId": 1,
+      "wheelId": 1,
       "id": 1
     },
     {
       "paintId": 1,
       "interiorId": 2,
       "technologyId": 3,
-      "wheelsId": 4,
+      "wheelId": 4,
       "id": 2
     }
   ]

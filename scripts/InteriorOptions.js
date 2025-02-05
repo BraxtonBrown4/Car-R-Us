@@ -1,7 +1,7 @@
 import { setInteriorId } from "./TransientState.js"
 export const interiorOptions = async () => {
 
-    const response = await fetch('http://localhost:8088/interior')
+    const response = await fetch('http://localhost:8088/interiors')
 
     const interiorArr = await response.json()
 

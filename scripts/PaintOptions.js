@@ -2,7 +2,7 @@ import { setPaintId } from "./TransientState.js"
 
 export const paintOptions = async () => {
 
-    const response = await fetch('http://localhost:8088/paint')
+    const response = await fetch('http://localhost:8088/paints')
 
     const paintArr = await response.json()
 
