@@ -1,4 +1,21 @@
 {
+  "vehicles": [
+    {
+      "id": 1,
+      "vehicle": "Car",
+      "price": 1
+    },
+    {
+      "id": 2,
+      "vehicle": "SUV",
+      "price": 1.5
+    },
+    {
+      "id": 3,
+      "vehicle": "Car",
+      "price": 2.25
+    }
+  ],
   "paints": [
     {
       "id": 1,
@@ -93,14 +110,24 @@
       "interiorId": 1,
       "technologyId": 1,
       "wheelId": 1,
+      "vehicleId": 1,
       "id": 1
     },
     {
       "paintId": 1,
-      "interiorId": 2,
-      "technologyId": 3,
-      "wheelId": 4,
+      "interiorId": 1,
+      "technologyId": 1,
+      "wheelId": 1,
+      "vehicleId": 1,
       "id": 2
+    },
+    {
+      "paintId": 1,
+      "interiorId": 1,
+      "technologyId": 1,
+      "wheelId": 1,
+      "vehicleId": 2,
+      "id": 3
     }
   ]
 }

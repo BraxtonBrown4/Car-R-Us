@@ -3,23 +3,27 @@ const transientState = {
     interiorId: 0,
     technologyId: 0,
     wheelId: 0,
-
+    vehicleId: 0
 }
 
 export const setPaintId = (chosenPaintId) => {
     transientState.paintId = parseInt(chosenPaintId)
- }
+}
 
 export const setInteriorId = (chosenInteriorId) => {
     transientState.interiorId = parseInt(chosenInteriorId)
- }
+}
 
 export const setTechnologyId = (chosenTechnologyId) => {
     transientState.technologyId = parseInt(chosenTechnologyId)
- }
+}
 
 export const setWheelsId = (chosenWheelsId) => {
     transientState.wheelId = parseInt(chosenWheelsId)
+}
+
+export const setVehicleId = (chosenWheelsId) => {
+    transientState.vehicleId = parseInt(chosenWheelsId)
  }
 
 export const placeOrder = async () => {

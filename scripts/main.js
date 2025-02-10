@@ -4,6 +4,7 @@ import { technologyOptions } from "./TechonologyOptions.js";
 import { wheelOptions } from "./WheelOptions.js";
 import { orderButton } from "./OrderButton.js";
 import { customCarOrdersHTML } from "./CustomCarOrders.js";
+import { vehicleOptions } from "./VehiclesOptions.js";
 
 const mainContainer = document.querySelector('#container')
 
@@ -13,6 +14,7 @@ const render = async () => {
     const interiorOptionsHTML = await interiorOptions()
     const technologyOptionsHTML = await technologyOptions()
     const wheelOptionsHTML = await wheelOptions()
+    const vehicleOptionsHTML = await vehicleOptions()
     const orderButtonHTML = orderButton()
     const customCarOrders = await customCarOrdersHTML()
 
@@ -23,7 +25,7 @@ const render = async () => {
             <section id="paint-choices">
                 <h2>Paints</h2>
                 ${paintOptionsHTML}
-                </section>
+            </section>
 
             <section id="interior-choices">
                 <h2>Interior</h2>
@@ -33,16 +35,21 @@ const render = async () => {
             <section id="technology-choices">
                 <h2>Technologies</h2>
                 ${technologyOptionsHTML}
-                </section>
+            </section>
 
             <section id="technology-choices">
                 <h2>Technologies</h2>
                 ${wheelOptionsHTML}
-                </section>
+            </section>
+
+            <section id="technology-choices">
+                <h2>Technologies</h2>
+                ${vehicleOptionsHTML}
+            </section>
         </article>
 
         <article id="order-button">
-                ${orderButtonHTML}
+            ${orderButtonHTML}
         </article>
 
         <article id="custom-orders">
@@ -56,5 +63,4 @@ const render = async () => {
 render()
 
 document.addEventListener("orderSaved", () => {
-    render()
-})
+    render()})
