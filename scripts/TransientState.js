@@ -19,7 +19,7 @@ export const setTechnologyId = (chosenTechnologyId) => {
  }
 
 export const setWheelsId = (chosenWheelsId) => {
-    transientState.wheelsId = parseInt(chosenWheelsId)
+    transientState.wheelId = parseInt(chosenWheelsId)
  }
 
 export const placeOrder = async () => {
@@ -40,4 +40,4 @@ export const placeOrder = async () => {
         document.dispatchEvent(orderEvent)
 
     }
- }
+}
